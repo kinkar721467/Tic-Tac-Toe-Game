@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>kata kuti khala</title>
+</head>
+<body>
+    <div class="game-title">
+        <h1><span id="element"></span></h1>
+    </div>
+
+    <div class="winner-container hide">
+        <h2 id="game-winner"></h2>
+    </div>
+
+    <button id="new-game">New Game</button>
+    <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+
+    <button id="reset-game">Reset Game</button>
+
+    <script src="script/app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        let typed = new Typed('#element', {
+          strings: ['TIC TAC TOE','KATA KUTI KHALA','JUST FOR FUN','ENJOY THE GAME'],
+          typeSpeed: 150,
+          backSeed: 150,
+          loop: true,
+        });
+      </script>
+
+<audio id="myAudio">
+    <source src="audio/winsound.mp3" type="audio/mp3">
+</audio>
+
+<audio id="myAudioClick">
+    <source src="audio/clickSound.mp3" type="audio/mp3">
+</audio>
+</body>
+</html>
